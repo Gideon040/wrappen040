@@ -430,6 +430,15 @@
     <a href="https://wa.me/31638903004" class="fixed bottom-4 right-4 z-50 w-12 h-12 bg-[#25D366] text-white flex items-center justify-center brutalist-shadow hover:scale-110 transition-transform">
         <span class="material-symbols-outlined text-2xl">chat</span>
     </a>
-
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (menuBtn && mobileNav) {
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            mobileNav.classList.toggle('flex');
+        });
+    }
+</script>
 </body>
 </html>
